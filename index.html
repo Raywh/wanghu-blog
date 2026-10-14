@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>王虎 · 前端工程师 | 个人博客</title>
+  <meta name="description" content="王虎（Ray），7 年前端工程师，坐标深圳。专注 Vue/React 生态与 AI 应用开发，熟悉 Vibe Coding，记录工程化实践与生活。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e05b3c'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23fff' font-family='serif'%3E虎%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+
+  <!-- 滚动进度条 -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#top">
+        <span class="nav-logo-mark">虎</span>
+        <span class="nav-logo-text">王虎<span class="nav-logo-sub">· Ray</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="主导航">
+        <a href="#about" class="nav-link">关于</a>
+        <a href="#experience" class="nav-link">经历</a>
+        <a href="#projects" class="nav-link">项目</a>
+        <a href="#blog" class="nav-link">博客</a>
+        <a href="#contact" class="nav-link">联系</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3L19 19M19 5l-1.7 1.7M6.7 17.3L5 19"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <button class="icon-btn nav-burger" id="navBurger" type="button" aria-label="打开菜单" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="hero-eyebrow reveal">你好，我是</p>
+          <h1 class="hero-title reveal">
+            王虎<span class="hero-title-en">Ray</span>
+          </h1>
+          <p class="hero-sub reveal">前端工程师 · 7 年经验 · 深圳</p>
+          <p class="hero-desc reveal">
+            专注 Vue / React 生态与 AI 应用开发，熟悉 Vibe Coding 工作流，
+            擅长复杂业务下的工程化与跨端落地。用代码构建靠谱的产品，也用文字记录成长。
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#projects">查看项目</a>
+            <a class="btn btn-ghost" href="#blog">阅读博客</a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat"><div class="stat-line"><span class="stat-num" data-count="7">0</span><span class="stat-unit">年+</span></div><span class="stat-label">前端经验</span></div>
+            <div class="stat"><div class="stat-line"><span class="stat-num" data-count="20">0</span><span class="stat-unit">+</span></div><span class="stat-label">交付项目</span></div>
+            <div class="stat"><div class="stat-line"><span class="stat-num" data-count="4">0</span><span class="stat-unit">年</span></div><span class="stat-label">AI 领域深耕</span></div>
+            <div class="stat"><div class="stat-line"><span class="stat-num" data-count="2019">0</span></div><span class="stat-label">本科毕业</span></div>
+          </div>
+        </div>
+        <div class="hero-right reveal">
+          <div class="avatar-wrap">
+            <div class="avatar">
+              <span class="avatar-name">王虎</span>
+              <span class="avatar-sub">Ray Wang</span>
+            </div>
+            <span class="chip chip-1">Vue3</span>
+            <span class="chip chip-2">React</span>
+            <span class="chip chip-3">Vite</span>
+            <span class="chip chip-4">uni-app</span>
+            <span class="chip chip-5">Vibe Coding</span>
+            <div class="status-card">
+              <span class="status-dot"></span>
+              <div>
+                <p class="status-title">目前就职</p>
+                <p class="status-sub">比亚迪 · 乘用车数字化中心</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>向下滚动</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ 关于 ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 · 关于我</p>
+          <h2 class="section-title">一个<span class="accent">踏实</span>的前端工程师</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              你好，我是王虎（Ray），毕业于贵州财经大学计算机科学与技术专业。2019 年入行至今，
+              拥有 <strong>7 年</strong>前端开发经验，覆盖 Web 端与移动端，具备跨平台开发能力。
+            </p>
+            <p>
+              近 <strong>4 年</strong>深耕 AI 业务领域，熟悉 Vibe Coding 场景与 AI 应用开发，
+              包括音视频录制、视频生成等复杂应用；同时完成多个后台管理与流程优化项目，
+              能在复杂业务逻辑下高效解决问题。
+            </p>
+            <p>
+              信奉工程化与组件化的力量：路由权限、请求库封装、组件缓存、脚手架迁移……
+              把重复的事交给工具，把精力留给真正重要的问题。
+            </p>
+            <div class="about-facts">
+              <div class="fact"><span class="fact-key">学历</span><span class="fact-val">贵州财经大学 · 计算机科学与技术 · 本科</span></div>
+              <div class="fact"><span class="fact-key">坐标</span><span class="fact-val">深圳</span></div>
+              <div class="fact"><span class="fact-key">状态</span><span class="fact-val">在职 · 开放交流</span></div>
+            </div>
+          </div>
+          <div class="about-side reveal">
+            <div class="skill-block">
+              <h3 class="skill-title">框架 / 生态</h3>
+              <div class="tags">
+                <span class="tag">Vue2 / Vue3</span><span class="tag">Vuex / Pinia</span><span class="tag">VueRouter</span><span class="tag">VueUse</span><span class="tag">React</span><span class="tag">Umi</span><span class="tag">Nuxt</span>
+              </div>
+            </div>
+            <div class="skill-block">
+              <h3 class="skill-title">UI / 可视化</h3>
+              <div class="tags">
+                <span class="tag">ElementPlus</span><span class="tag">ElementUI</span><span class="tag">Ant Design</span><span class="tag">NutUI</span><span class="tag">uview-plus</span><span class="tag">Canvas</span><span class="tag">G6</span><span class="tag">ECharts</span>
+              </div>
+            </div>
+            <div class="skill-block">
+              <h3 class="skill-title">跨端 / 工程化</h3>
+              <div class="tags">
+                <span class="tag">uni-app</span><span class="tag">Vite</span><span class="tag">Webpack</span><span class="tag">Pnpm</span><span class="tag">模块联邦</span><span class="tag">Git</span><span class="tag">Electron</span><span class="tag">ES6+</span>
+              </div>
+            </div>
+            <div class="hobby-block">
+              <h3 class="skill-title">生活里</h3>
+              <ul class="hobby-list">
+                <li><span class="hobby-icon">🏃</span>热爱运动 · 早上跑步打卡</li>
+                <li><span class="hobby-icon">✍️</span>热爱写作 · 在墨问小程序持续写作</li>
+                <li><span class="hobby-icon">📷</span>热爱生活 · 喜欢拍照，积极参加活动</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 经历 ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 · 工作经历</p>
+          <h2 class="section-title">七年，四家公司，<span class="accent">一路成长</span></h2>
+        </div>
+        <div class="timeline" id="timeline">
+          <!-- JS 渲染 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 项目 ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 · 项目经验</p>
+          <h2 class="section-title">从<span class="accent">AI 应用</span>到<span class="accent">微前端</span></h2>
+          <div class="filter-bar reveal" id="projectFilter">
+            <button class="filter-btn is-active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="ai">AI 应用</button>
+            <button class="filter-btn" data-filter="web">官网 / C 端</button>
+            <button class="filter-btn" data-filter="admin">后台管理</button>
+            <button class="filter-btn" data-filter="arch">架构 / 工程化</button>
+          </div>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- JS 渲染 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 博客 ============ -->
+    <section class="section section-alt" id="blog">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 · 博客</p>
+          <h2 class="section-title">记录代码，也<span class="accent">记录生活</span></h2>
+          <p class="section-desc">
+            持续写作中，更多文章见
+            <a class="inline-link" href="https://blog.csdn.net/wanghu20150107010129" target="_blank" rel="noopener">CSDN 博客</a>。
+          </p>
+        </div>
+        <div class="blog-list" id="blogList">
+          <!-- JS 渲染 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 联系 ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 · 联系我</p>
+          <h2 class="section-title">一起聊聊<span class="accent">技术</span>或<span class="accent">合作</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <a class="contact-card" href="mailto:2256896349@qq.com">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">邮箱</p>
+                <p class="contact-value">2256896349@qq.com</p>
+              </div>
+              <span class="contact-copy" data-copy="2256896349@qq.com" role="button" tabindex="0" title="复制邮箱">复制</span>
+            </a>
+            <a class="contact-card" href="tel:15508505357">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">电话</p>
+                <p class="contact-value">155 0850 5357</p>
+              </div>
+            </a>
+            <a class="contact-card" href="https://github.com/Raywh" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-value">github.com/Raywh</p>
+              </div>
+            </a>
+            <a class="contact-card" href="https://blog.csdn.net/wanghu20150107010129" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3h15A1.5 1.5 0 0 1 21 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 19.5v-15A1.5 1.5 0 0 1 4.5 3Zm7.5 4a2.5 2.5 0 0 0-2.5 2.5v5A2.5 2.5 0 0 0 12 17a2.5 2.5 0 0 0 2.5-2.5v-2H13v2a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0h2a2.5 2.5 0 0 0-2.5-2.5Z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">CSDN 博客</p>
+                <p class="contact-value">blog.csdn.net/wanghu20150107010129</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-note reveal">
+            <p class="contact-note-title">保持开放</p>
+            <p class="contact-note-body">
+              无论是技术交流、面试机会，还是博客互访，
+              都欢迎通过上面的方式找到我。通常会在 24 小时内回复。
+            </p>
+            <div class="contact-note-meta">
+              <span>📍 深圳</span>
+              <span>🕒 工作日 10:00 - 19:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> 王虎 · 前端工程师 · 用 <code>&lt;/&gt;</code> 构建世界</p>
+      <p class="footer-links">
+        <a href="https://github.com/Raywh" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">·</span>
+        <a href="https://blog.csdn.net/wanghu20150107010129" target="_blank" rel="noopener">CSDN</a>
+        <span class="dot">·</span>
+        <a href="#top">回到顶部</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============ 文章阅读弹窗 ============ -->
+  <div class="modal" id="articleModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal type="button" aria-label="关闭">✕</button>
+      <article class="modal-content" id="modalContent"></article>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- 全局提示 -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
